@@ -11,7 +11,7 @@ class DroneView < Formula
 
   on_macos do
     url "https://github.com/garbelini/drone-view/releases/download/v0.1.0/drone-view_0.1.0_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "4b6461172a19feb1894b1ef07f6e9b55ab71047d9d1543a24902969bc27bf3fe"
+    sha256 "81f3f07adb41054ad015237a184252b785b284ae8fae29e9f7ea0f3d372bb483"
 
     def install
       bin.install "drone-view"
@@ -31,7 +31,7 @@ class DroneView < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/garbelini/drone-view/releases/download/v0.1.0/drone-view_0.1.0_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "704916f3bc5a240fd999bc84299654d30d0b7bcfd4d7b7b764f25fc30d0b4fef"
+      sha256 "79eacb04d91245a43aaa78c2ca82d2d53044a630cc8840e816ba7e84334cd7eb"
 
       def install
         bin.install "drone-view"
