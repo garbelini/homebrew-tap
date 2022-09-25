@@ -6,12 +6,12 @@ require_relative "../lib/private"
 class Drb < Formula
   desc "drb - Drone CI command line browser"
   homepage ""
-  version "0.2.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/garbelini/drb/releases/download/v0.2.0/drb_0.2.0_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "bd43d14228afde475a96c1ef54200a5b17ff3a2ab138ca17a150daa2289ed1dc"
+    url "https://github.com/garbelini/drb/releases/download/v1.0.0/drb_1.0.0_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "08c704a9f3d37830c2f152f79804c65c82efa9ff10540ac84ca15aa7e3ffd80f"
 
     def install
       bin.install "drb"
@@ -30,8 +30,8 @@ class Drb < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/garbelini/drb/releases/download/v0.2.0/drb_0.2.0_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "f2d08b049a487183f07865310b776f7e03b5c464037d8507c57a53efd5637ca8"
+      url "https://github.com/garbelini/drb/releases/download/v1.0.0/drb_1.0.0_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "3310b6b39ee14a9c8fb772ed0611a9da819721f87c368e5d2fdf36daa89cf429"
 
       def install
         bin.install "drb"
